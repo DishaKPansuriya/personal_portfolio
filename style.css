@@ -11,21 +11,21 @@
 }
 
 :root {
-    --body-color : #fff;
+    --body-color : #392467;
     --color-white : rgba(250,250,250);
     --text-color-second: rgba(38,37,37);
     --first-color : rgba(72,61,139);
     --first-shadow : rgba(0,0,0,0.1);
 
     --box-color : #fff;
-    --nav-color :  rgba(2, 124, 103);
+    --nav-color :  #43316768;
     --nav-icon: #000;
     --logo-color: #000;
 
-    --text-color : #027c67;
+    --text-color : #fff;
     --color-white : #242526;
 
-    --icon-color : #242526;
+    --icon-color : #fff;
     --mode-color : #ccc;
 }
 
@@ -33,19 +33,6 @@ body {
     background: var(--body-color);
 }
 
-body.dark {
-    --body-color : #202425;
-    --box-color : #fff;
-
-    --nav-color : #027c67;
-    --color-white : #fff;
-    --text-color : #fff;
-
-    --nav-icon : #fff;
-    --logo-color : #fff;
-    --icon-color : #fff;
-    --mode-color : #fff;
-}
 
 .container {
     width: 100%;
@@ -232,7 +219,7 @@ body.dark #moon {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 8px;
-    background: #027c67;
+    background: #5f4693a0;
     font-weight: 500;
     transition: all 0.5s ease;
 }
@@ -261,8 +248,12 @@ i {
     height: 40px;
     color: var(--icon-color);
     border-radius: 50%;
-    box-shadow: 0px 1px 5px 3px #027c67;
+    box-shadow: 0px 1px 5px 3px #5f4693a0;
     cursor: pointer;
+}
+
+.social-icons .icon i {
+    color: white;
 }
 
 
@@ -320,7 +311,7 @@ i {
 .image img {
     width: 400px;
     height: 600px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .section {
@@ -357,7 +348,7 @@ i {
     flex-direction: column;
     padding-block: 45px 45px;
     padding-inline: 35px;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     background: transparent;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
     border-radius: 20px;
@@ -403,7 +394,7 @@ i {
     cursor: pointer;
     border: none;
     border-radius: 20px;
-    background: #027c67;
+    background: #5f4693a0;
     color: #fff;
     margin-top: 20px;
     font-weight: 500;
@@ -417,7 +408,7 @@ i {
     background: transparent;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
     padding: 10px 20px;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     border-radius: 20px;
 }
 
@@ -447,7 +438,7 @@ i {
     height: 100%;
     width: 90%;
     border-radius: 6px;
-    background: #027c67;
+    background: #fff;
     animation: progress 0.4s ease-in-out forwards;
     opacity: 0;
 }
@@ -492,7 +483,7 @@ i {
     color: #fff;
     padding: 2px 6px;
     border-radius: 20px;
-    background: #027c67;
+    background: #5f4693a0;
     z-index: 1;
 }
 
@@ -513,12 +504,12 @@ i {
     width: 100%;
     height: 250px;
     background: transparent;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
     overflow: hidden;
     cursor: pointer;
-    color: var(--logo-color);
+    color: white;
 }
 
 .project-box p {
@@ -530,7 +521,7 @@ i {
 
 .project-box > i {
     font-size: 50px;
-    color: #027c67;
+    color: #5f4693a0;
     margin-bottom: 25px;
 }
 
@@ -544,7 +535,7 @@ i {
     content: "";
     position: absolute;
     bottom: -100%;
-    background: #027c67;
+    background: #5f4693a0;
     width: 100%;
     height: 100%;
     transition: 0.4s;
@@ -577,7 +568,7 @@ i {
     padding: 20px 40px;
     width: 100%;
     height: 380px;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     border-radius: 20px;
     box-shadow: 1px 10px 8px 2px var(--first-shadow);
     overflow: hidden;
@@ -598,7 +589,7 @@ i {
 }
 
 .contact-info::after {
-    color: #8749f2;
+    color: #856eb7;
 }
 
 .contact-info:hover.contact-info h2,
@@ -625,7 +616,7 @@ i {
     width: 50%;
     height: 55px;
     background: transparent;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     padding-inline: 20px;
     border-radius: 10px;
     outline: none;
@@ -635,7 +626,7 @@ i {
     width: 100%;
     height: 55px;
     background: transparent;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     border-radius: 10px;
     padding-inline: 20px;
     margin-bottom: 10px;
@@ -648,7 +639,7 @@ i {
     justify-content: center;
     margin-left: 40%;
     border: none;
-    background: #027c67;
+    background: #5f4693a0;
     padding: 10px 20px;
     border-radius: 30px;
     color: #fff;
@@ -658,7 +649,7 @@ textarea {
     width: 100%;
     height: 250px;
     background: transparent;
-    border: 2px solid #027c67;
+    border: 2px solid #856eb7;
     padding: 15px 20px;
     color: var(--text-color);
     border-radius: 10px;
@@ -704,7 +695,11 @@ footer {
 .footer-social-icons { 
     display: flex;
     gap: 30px;
-    color: var(--color-white);
+    color: white;
+}
+
+.footer-social-icons .icon i{
+    color: #fff;
 }
 
 .bottom-footer {
@@ -768,6 +763,7 @@ footer {
     }
     .social-icons {
         margin-top: 2em;
+        color: white;
     }
     .featured-image {
         order: 1;
