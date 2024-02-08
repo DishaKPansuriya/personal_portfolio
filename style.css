@@ -182,13 +182,13 @@ body.dark #moon {
     font-size: 50px;
     font-weight: 600;
     margin-block: 20px;
-    color: #027c67;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .typedText {
     font-family: sans-serif;
-    color: #027c67;
+    color: #fff;
     font-size: 40px;
     font-weight: 600;
     text-transform: capitalize;
@@ -620,6 +620,11 @@ i {
     padding-inline: 20px;
     border-radius: 10px;
     outline: none;
+    color: #fff;
+}
+
+.input-fields::placeholder {
+    color: #fff;
 }
 
 .input-subject {
@@ -631,6 +636,11 @@ i {
     padding-inline: 20px;
     margin-bottom: 10px;
     outline: none;
+    color: #fff;
+}
+
+.input-subject::placeholder{
+    color: #fff;
 }
 
 .form-button > .btn {
@@ -655,6 +665,10 @@ textarea {
     border-radius: 10px;
     outline: none;
     resize: none;
+}
+
+textarea::placeholder{
+    color: #fff;
 }
 
 .form-button i {
