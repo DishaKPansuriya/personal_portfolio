@@ -363,7 +363,6 @@ i {
 
 .about-info figcaption {
     width: 100%;
-    padding: 25px;
     position: relative;
 }
 
@@ -407,7 +406,8 @@ i {
     width: 100%;
     background: transparent;
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
-    padding: 10px 20px;
+    padding-block: 45px 45px;
+    padding-inline: 35px;
     border: 2px solid #856eb7;
     border-radius: 20px;
 }
@@ -422,6 +422,29 @@ i {
     font-size: 14px;
     font-weight: 600;
     color: var(--text-color);
+}
+
+.other-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.skill-name {
+    display: flex;
+    gap: 25px;
+}
+
+.other-skills-title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+    border-radius: 20px;
+    border: 2px solid #856eb7;
+    padding: 5px 15px;
+    
 }
 
 .skill-box .skill-bar {
