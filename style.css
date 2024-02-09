@@ -884,6 +884,7 @@ footer {
     }
     .project-container {
         justify-content: center;
+        display: flex;
         align-items: center;
     }
     /* .project-box {
@@ -895,7 +896,30 @@ footer {
         margin-left: 60%;
     }
     .project-box{
+        font-size: 11px;
+    }
+
+    .project-box h3 {
+        text-align: center;
+    }
+
+    .project-box label {
         font-size: 12px;
+    }
+
+    .project-box p {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .skill-name {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .other-skills-title {
+        padding: 5px 8px;
     }
 }
 
@@ -903,6 +927,7 @@ footer {
     .featured-name {
         font-size: 40px;
     }
+    
     .project-box {
         width: 100%;
     }
