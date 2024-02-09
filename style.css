@@ -224,6 +224,21 @@ body.dark #moon {
     transition: all 0.5s ease;
 }
 
+.research-btn {
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.research-btn:hover{
+    background: #856eb7;
+    color: #fff;
+}
 
 btn i {
     margin-right: 10px;
@@ -477,15 +492,15 @@ i {
 }
 .skill-per.python {
     animation-delay: 0.1s;
-    width: 70%;
+    width: 75%;
 }
 .skill-per.javascript {
     animation-delay: 0.1s;
-    width: 40%;
+    width: 65%;
 }
 .skill-per.php {
     animation-delay: 0.1s;
-    width: 40%;
+    width: 75%;
 }
 
 @keyframes progress {
