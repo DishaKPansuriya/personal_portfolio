@@ -83,7 +83,35 @@ nav {
     padding-inline: 15px;
     margin-inline: 20px;
     font-size: 20px;
+    background-image: linear-gradient(
+    to right,
+    #5b34dc,
+    #8257df 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
+
+.nav-link:before {
+    content: '';
+    background: #8257df;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+.nav-link:hover {
+    background-position: 0;
+   }
+.nav-link:hover::before {
+    width: 100%;
+  }
 
 .nav-menu-btn {
     display: none;
@@ -223,21 +251,26 @@ body.dark #moon {
     font-weight: 500;
     transition: all 0.5s ease;
 }
+.btn:hover{
+    background: #fff;
+    color: #392467;
+}
 
 .research-btn {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 8px;
-    background: #fff;
+    background: #5f4693a0;
     font-weight: 500;
     transition: all 0.5s ease;
+    color: #fff;
 }
 
 .research-btn:hover{
-    background: #856eb7;
-    color: #fff;
+    background: #fff;
+    color: #392467;
 }
 
 btn i {
@@ -413,6 +446,11 @@ i {
     margin-top: 20px;
     font-weight: 500;
     transition: all 0.5s ease;
+}
+
+.about-me-btn:hover{
+    background: #fff;
+    color: #392467;
 }
 
 .skill {
@@ -846,14 +884,18 @@ footer {
     }
     .project-container {
         justify-content: center;
+        align-items: center;
     }
-    .project-box {
-        width: 80%;
-    }
+    /* .project-box {
+        width: 80%; */
+    /* } */
     .mode {
         display: flex;
         align-items: center;
         margin-left: 60%;
+    }
+    .project-box{
+        font-size: 12px;
     }
 }
 
