@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -204,6 +205,11 @@ body.dark #moon {
     font-weight: 600;
     margin-bottom: -20px;
     color: var(--text-color);
+}
+
+.nav-name {
+    font-family: 'Cinzel', serif;
+
 }
 
 .featured-name {
