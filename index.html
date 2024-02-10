@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css/>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("qyWwTNyQxJurX3On_");
+   })();
+</script>
+
 </head>
 <body>
     
@@ -357,15 +367,15 @@
                     <div class="col">
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text" class="input-fields" placeholder="Your Name">
-                                <input type="text" class="input-fields" placeholder="Your Email">
+                                <input type="text"  id="name" class="input-fields" placeholder="Your Name">
+                                <input type="text"  id="email" class="input-fields" placeholder="Your Email">
                             </div>
                             <div class="text-area">
                                 <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea placeholder="Message"></textarea>
+                                <textarea  id="message" placeholder="Message"></textarea>
                             </div>
                             <div class="form-button">
-                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                                <button class="btn" onclick="sendMail()">Send <i class="uil uil-message"></i></button>
                             </div>
                         </div>
                     </div>
