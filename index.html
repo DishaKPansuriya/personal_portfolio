@@ -8,17 +8,9 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css/>
+   
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("qyWwTNyQxJurX3On_");
-   })();
-</script>
-
+    
 </head>
 <body>
     
@@ -93,8 +85,8 @@
                         </div>
         
                         <div class="icon">
-                            <a href="https://www.linkedin.com/in/disha-pansuriya/" style="text-decoration: none;">
-                                <i class="fa-brands fa-linkedin-in icon"></i>
+                            <a href="https://www.linkedin.com/in/disha-pansuriya/">
+                                <i class="uil uil-linkedin"></i>
                             </a>
                         </div>
         
@@ -362,23 +354,31 @@
                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
                             <p><i class="uil uil-envelope">pansuriya.di@northeastern.edu</i></p>
                             <p><i class="uil uil-phone">+1 (857) 753-6981</i></p>
+                            <p><i class="uil uil-location-point">Boston, MA</i></p>
                         </div>
                     </div>
+                   
                     <div class="col">
+
+
                         <div class="form-control">
                             <div class="form-inputs">
-                                <input type="text"  id="name" class="input-fields" placeholder="Your Name">
-                                <input type="text"  id="email" class="input-fields" placeholder="Your Email">
+                                
+                                <input type="text" class="input-fields" id="name" placeholder="Your Name">
+                            
+                                <input type="text" class="input-fields" id="email" placeholder="Your Email">
                             </div>
                             <div class="text-area">
-                                <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea  id="message" placeholder="Message"></textarea>
+                                <!-- <input type="text" class="input-subject"  placeholder="Subject"> -->
+                                
+                                <textarea id="message" placeholder="Message"></textarea>
                             </div>
                             <div class="form-button">
                                 <button class="btn" onclick="sendMail()">Send <i class="uil uil-message"></i></button>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
         </main>
@@ -410,7 +410,7 @@
 
                 <div class="icon">
                     <a href="https://www.linkedin.com/in/disha-pansuriya/">
-                        <i class="fa-brands fa-linkedin-in icon"></i>
+                        <i class="uil uil-linkedin"></i>
                     </a>
                 </div>
 
@@ -441,5 +441,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "qyWwTNyQxJurX3On_",
+            });
+        })();
+    </script>
 </body>
 </html>
