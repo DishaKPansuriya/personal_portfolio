@@ -91,8 +91,8 @@ nav {
     font-size: 20px;
     background-image: linear-gradient(
     to right,
-    #5b34dc,
-    #8257df 50%,
+    #8274b2,
+    #7c56cf 50%,
     #fff 50%
   );
   background-size: 200% 100%;
@@ -104,13 +104,14 @@ nav {
 
 .nav-link:before {
     content: '';
-    background: #8257df;
+    background: #6040a4;
     display: block;
     position: absolute;
     bottom: -3px;
     left: 0;
     width: 0;
     height: 3px;
+    transition: 0.3s ease;
   }
 .nav-link:hover {
     background-position: 0;
@@ -250,6 +251,18 @@ body.dark #moon {
     color: var(--text-color);
 }
 
+.intern-info {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #242526;
+    margin-top: 25px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+
 .text-btn {
     display: flex;
     border-radius: 8px;
@@ -268,14 +281,49 @@ body.dark #moon {
     font-size: 15px;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 8px;
-    background: #5f4693a0;
+    /* border-radius: 8px; */
+    background: #a380ed3c;
     font-weight: 500;
     transition: all 0.5s ease;
+    position: relative;
+    color: #fff;
+    
 }
-.btn:hover{
-    background: #fff;
-    color: #392467;
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+.btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+
+.btn::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0;
+transition: all 0.3s;
+border: 1px solid rgba(255,255,255,0.5);
+transform: scale(1.2,1.2);
+}
+
+.btn:hover::after {
+opacity: 1;
+transform: scale(1,1);
 }
 
 .research-btn {
@@ -325,6 +373,7 @@ i {
 .social-icons .icon i {
     color: white;
 }
+
 
 
 .icon-circle {
@@ -645,7 +694,9 @@ i {
     bottom: 0;
 }
 
+.project-box:hover.project-box p,
 .project-box:hover.project-box i,
+.project-box:hover.project-box h3,
 .project-box:hover.project-box > h3,
 .project-box:hover.project-box > label {
     color: #fff;
@@ -747,9 +798,8 @@ i {
     justify-content: center;
     margin:auto;
     border: none;
-    background: #5f4693a0;
+    background: #a380ed3c;
     padding: 10px 20px;
-    border-radius: 30px;
     color: #fff;
 }
 
@@ -801,6 +851,7 @@ footer {
 
 .footer_menu_list a:hover {
     color: #8749f2;
+    transition: 0.3s ease;
 }
 
 .footer-social-icons { 

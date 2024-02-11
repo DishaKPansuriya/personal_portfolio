@@ -47,8 +47,8 @@ var typingEffect = new Typed(".typedText", {
     strings:["Research Analyst", "Economist", "Market Analyst"],
     loop: true,
     typeSpeed: 100,
-    backSpeed: 80,
-    backDelay: 2000,
+    backSpeed: 50,
+    backDelay: 1000,
 })
 
 //scroll-animation
